@@ -1,0 +1,8 @@
+const calculateWinner = (player1Score, player2Score, raceTo) => {
+  if (player1Score === raceTo) return "Player 1 Wins!";
+  if (player2Score === raceTo) return "Player 2 Wins!";
+  return "Match in Progress";
+};
+
+// Contoh penggunaan: Race to 7
+console.log(calculateWinner(7, 5, 7)); // Output: Player 1 Wins!
