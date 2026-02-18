@@ -1,0 +1,19 @@
+{
+  "round": 1,
+  "matches": [
+    {
+      "id": "m1",
+      "player1": "Budi (G5)",
+      "player2": "Andi (G4)",
+      "score": [0, 0],
+      "winner": null
+    },
+    {
+      "id": "m2",
+      "player1": "Candra (G6)",
+      "player2": "BYE",
+      "score": [0, 0],
+      "winner": "Candra (G6)"
+    }
+  ]
+}
