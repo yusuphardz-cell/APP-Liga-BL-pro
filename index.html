@@ -1,24 +1,33 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Website Aman SuperTokens</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Impor SDK SuperTokens -->
+    <script src="https://cdn.jsdelivr.net"></script>
+    <script src="https://cdn.jsdelivr.net"></script>
+    <script src="https://cdn.jsdelivr.net"></script>
 </head>
 <body>
     <header>
-        <h1>Halo, Saya [Nama Anda]</h1>
-        <p>Web Developer & Pengguna SuperTokens</p>
+        <h1>Website Portofolio Saya</h1>
+        <div id="auth-ui">
+            <!-- Konten ini akan berubah tergantung status login -->
+            <button id="login-btn" onclick="window.location.href='/auth'">Login / Daftar</button>
+            <button id="logout-btn" style="display:none;" onclick="onLogout()">Keluar</button>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya sedang belajar membangun website aman menggunakan framework open-source.</p>
+    <section id="content">
+        <h2 id="welcome-msg">Silakan login untuk melihat konten eksklusif.</h2>
+        <div id="secret-info" style="display:none;">
+            <p>🎉 Selamat! Anda berhasil login menggunakan SuperTokens Open Source.</p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Dibuat dengan ❤️ untuk GitHub Pages</p>
-    </footer>
+    <script src="auth-config.js"></script>
 </body>
 </html>
